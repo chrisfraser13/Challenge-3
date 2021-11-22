@@ -1,22 +1,36 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-function generatePassword() {
-  console.log("Hey! Why did you click me?");
-  var length = 8,
-      charset = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+?><:{}[]",
-      retVal = "";
-  for (var i = 0, n = charset.length; i < length; ++i) {
-    retVal += charset.charAt(Math.floor(Math.random() * n));
-  }
-  
-  var length = Number(prompt("How many characters would you like your password to be?"));
-  (length) || lenght < 8 || length > 128) length = Number(prompt("length must be 8-128 characters. How many characters would you like your password to be?"));
+var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+var lower = "abcdefghijklmnopqrstuvwxyz"
+var numbers = "0123456789"
+var special = "!@,#$%&*{}[]/\\+="
 
-  var uppers = confirm("Would you like to use uppercase letters?");
-
-  return retVal;
+function enterpassword() {
+  var password = generatepassword;
+  var passwordText = document.querySelector("#password");
+  passwordText.value = password;
 }
+
+debugger;
+function writePassword(){
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+  passwordText.value = password;
+
+}
+
+function generatePassword() { 
+  var result = "";
+  var length = prompt("How many characters in your random password? (between 8 and 128)");
+  if(isNaN(length)){
+    alert("You must input a number!");
+    return generatePassword
+  }
+}
+
+
+
 
 // Write password to the #password input
 function writePassword() {
