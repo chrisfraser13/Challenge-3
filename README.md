@@ -1,3 +1,3 @@
-# Challenge-3
-Challenge 3 for UNCC Bootcamp
-I copied the starter code for HTML, CSS and Javascript and committed it after I did that. The the rest of the commits are of my own work. 
+Password Generator:
+
+This app allows the user to randomly generate a password containing all numbers, letters (capital and lowercase), and special symbols. The length of the password must be between 8-128 characters. The user is prompted with four questions to customize their randomly generated password.
